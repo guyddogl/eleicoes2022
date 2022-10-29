@@ -4,6 +4,8 @@ import getCurrentDateTime from './utils/date';
 function App() {
   const [isLoading, setIsLoading] = useState(true);
 
+  const [loadAPI, setLoadAPI] = useState(true);
+
   const [dataTSE, setDataTSE] = useState({});
 
   useEffect(() => {
@@ -15,7 +17,7 @@ function App() {
       setIsLoading(false);
     };
     getDataTSE();
-  }, []);
+  }, [loadAPI]);
 
   console.log(dataTSE);
   return (
@@ -34,6 +36,13 @@ function App() {
           Urnas apuradas: 25%
         </div>
       </div>
+      <button
+        type="button"
+        className="btn btn-lg btn-secondary"
+        onClick={() => setLoadAPI(!loadAPI)}
+      >
+        Atualizar
+      </button>
       <p>
         Última atualização:
         {' '}
