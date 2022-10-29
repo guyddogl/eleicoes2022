@@ -26,7 +26,6 @@ function App() {
         .then((response) => response.json())
         .then((data) => {
           setDataTSE(data);
-          // setUrnasApuradas({ width: `${Number(data.psa.replace(',', '.'))}%` });
           setTimeout(() => setUrnasApuradas({ width: `${Number(data.psa.replace(',', '.'))}%` }), 500);
         });
       setIsLoading(false);
