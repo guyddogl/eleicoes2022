@@ -1,9 +1,14 @@
 import React from 'react';
+import getCurrentDateTime from './utils/date';
 
 function App() {
   return (
-    <div className="App">
-      hello
+    <div>
+      <p>
+        Última atualização:
+        {' '}
+        {getCurrentDateTime()}
+      </p>
     </div>
   );
 }
