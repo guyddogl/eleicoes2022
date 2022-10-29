@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eleicoes2022/static/css/main.81ba33d8.css",
+    "main.js": "/eleicoes2022/static/js/main.cf3e8d0d.js",
+    "index.html": "/eleicoes2022/index.html",
+    "main.81ba33d8.css.map": "/eleicoes2022/static/css/main.81ba33d8.css.map",
+    "main.cf3e8d0d.js.map": "/eleicoes2022/static/js/main.cf3e8d0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ba33d8.css",
+    "static/js/main.cf3e8d0d.js"
+  ]
+}
