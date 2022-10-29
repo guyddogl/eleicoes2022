@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+  --primary-text-color: #424242;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-text-color);
+}
+
+.progress-bar-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.photo-candidato {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
