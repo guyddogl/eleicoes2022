@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import getCurrentDateTime from './utils/date';
+import ApexChart from 'react-apexcharts';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,6 +20,14 @@ function App() {
   }, [loadAPI]);
 
   console.log(dataTSE);
+
+  const options = {
+    labels: ['candidato 1', 'candidato 2'],
+    colors: ['#008FFB', '#E91E63'],
+  };
+
+  const series = [44, 56];
+
   return (
     <div>
       {isLoading && <p>Loading...</p>}
@@ -43,11 +51,12 @@ function App() {
       >
         Atualizar
       </button>
-      <p>
-        Última atualização:
-        {' '}
-        {getCurrentDateTime()}
-      </p>
+      <ApexChart
+        options={options}
+        series={series}
+        width="430px"
+        type="pie"
+      />
     </div>
   );
 }
