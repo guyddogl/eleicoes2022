@@ -21,6 +21,19 @@ function App() {
   return (
     <div>
       {isLoading && <p>Loading...</p>}
+      <div className="progress" style={{ height: '40px' }}>
+        <div
+          className="progress-bar progress-bar-striped progress-bar-animated bg-secondary"
+          role="progressbar"
+          aria-label="Example with label"
+          style={{ width: '25%' }}
+          aria-valuenow="25"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          Urnas apuradas: 25%
+        </div>
+      </div>
       <p>
         Última atualização:
         {' '}
